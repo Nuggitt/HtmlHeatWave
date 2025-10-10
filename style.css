@@ -1,133 +1,148 @@
-body, h1, p {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Style the heading */
 h3 {
-    color: #2f64d8;
-    font-family: 'Courier New', monospace;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: #2f64d8;
+  font-family: "Courier New", monospace;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* Style the paragraph */
 p {
-    color: #2f64d8;
-    font-family: 'Courier New', monospace;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  color: #2f64d8;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 /* Style the button */
 button {
-    border-radius: 25px;
-    background-color: #ffffff;
-    border: none;
-    color: #15036e;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background-color 0.4s, transform 0.4s;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    font-weight: bold;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: none;
+  color: #15036e;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
 }
 
 button:hover {
-    background-color: #cacaca;
-    transform: translateY(-2px);
+  background-color: #cacaca;
+  transform: translateY(-2px);
 }
 
 .fullscreenButton {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .showTableButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 /* Style the table */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Courier New', monospace;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Courier New", monospace;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    font-family: 'Courier New', monospace;
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  font-family: "Courier New", monospace;
 }
 
 th {
-    background-color: #f2f2f2;
-    color: #15036e;
+  background-color: #f2f2f2;
+  color: #15036e;
 }
 
 td {
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 tr:hover {
-    background-color: #dcdcdc;
+  background-color: #dcdcdc;
 }
 
 /* Container styling */
 .container {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
 /* Slider container */
 .slidecontainer {
-    width: 100%;
+  width: 100%;
 }
 
 /* Slider styling */
 .slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 70%;
-    height: 8px;
-    background: #636262;
-    border-radius: 4px;
-    outline: none;
-    opacity: 0.8;
-    transition: opacity .2s;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70%;
+  height: 8px;
+  background: #636262;
+  border-radius: 4px;
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
 }
 
 .slider:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #ffffff;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #15036e;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 25px;
+  height: 25px;
+  background: #15036e;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.loading-overlay {
+  position: fixed; /* dækker hele siden */
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 9999;
 }
