@@ -1,6 +1,6 @@
 const baseUrl =
   "https://heatwave20260329030232-f6aqg9bgfygkfmgw.denmarkeast-01.azurewebsites.net/api/temp";
-
+//test
 Vue.createApp({
   data() {
     return {
